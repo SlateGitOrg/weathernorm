@@ -111,7 +111,6 @@ Generated set point 57 F, alpha 1.200, beta 0.1867
 └────────┴─────────┴─────────┴───────────┴─────────┴────────┘
 pre: base 57 F, slope 0.18419, intercept 1.1964, R2 0.99408, 13 periods, status ok
 NumPy lstsq check: max relative difference 5.58e-16
-                   R2 by base, post phase
 ```
 
 Audit counts (`weathernorm audit`):

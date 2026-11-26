@@ -1,0 +1,12 @@
+/.venv/
+/.tmp/
+/data/
+/out/
+__pycache__/
+*.pyc
+/.pytest_cache/
+/.ruff_cache/
+/dist/
+*.egg-info/
+*.duckdb
+*.duckdb.wal

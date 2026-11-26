@@ -1,0 +1,45 @@
+# Parameters for the synthetic data and the SQL pipeline.
+synth:
+  seed: 7
+  n_participants: 300
+  n_comparison: 300
+  weather_start: 2016-01-01
+  weather_end: 2025-12-31
+  reads_start: 2023-01-01
+  reads_end: 2025-12-31
+  retrofit_first: 2024-06-01
+  retrofit_last: 2024-08-31
+  mild_winter_start: 2024-10-01
+  mild_winter_end: 2025-04-30
+  mild_winter_hdd_cut: 0.15
+  mean_temp_f: 50.0
+  amplitude_f: 22.0
+  ar_phi: 0.7
+  ar_sigma_f: 4.5
+  base_low: 55
+  base_high: 65
+  alpha_low: 0.8
+  alpha_high: 2.5
+  beta_low: 0.10
+  beta_high: 0.25
+  retrofit_beta_cut: 0.18
+  read_gap_low: 27
+  read_gap_high: 35
+  read_noise: 0.03
+  estimated_share: 0.08
+  n_meter_swap: 6
+  n_short_history: 12
+
+pipeline:
+  min_days: 20
+  max_days: 40
+  min_periods: 9
+  base_min: 50
+  base_max: 70
+  fixed_base: 65
+  naive_min_periods: 6
+
+bootstrap:
+  resamples: 500
+  seed: 11
+  ci: 0.95
